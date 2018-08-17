@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {%  block title_block %}
+            Switty Beats
+        {% endblock title_block %}
+    </title>
+    {% include 'templates/main_site/snippets/css.html' %}
+
+</head>
+
+<body>
+    {% include 'templates/main_site/snippets/navbar.html' %}
+
+    <!-- main content block -->
+    {% block content_block %}
+        {% include 'templates/main_site/snippets/heading.html' %}
+    {% endblock content_block %}
+
+    {% include 'templates/main_site/snippets/js.html' %}
+</body>
+
+</html>

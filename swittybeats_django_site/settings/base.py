@@ -55,7 +55,7 @@ ROOT_URLCONF = 'swittybeats_django_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'main_site')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
